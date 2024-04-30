@@ -9,10 +9,15 @@ class GraphScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Graph Screen'),
         centerTitle: true,
-      ), body: Column(children: [
-      OutlinedButton(onPressed: (){
-        Navigator.pushNamed(context, '/new');
-      }, child: Text('Move to New Screen'))
+      ), body: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+      Center(
+        child: OutlinedButton(onPressed: (){
+          Navigator.pushNamed(context, '/new');
+        }, child: Text('Move to New Screen')),
+      )
     ],),
     );
   }
